@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- <suite name="Suite" parallel="methods" thread-count="3" -->
+<!-- data-provider-thread-count="2"> -->
+
+<suite name="Data Sheet">
+
+	<listeners>
+		<listener class-name="com.test.listeners.TestNGListener"></listener>
+		<listener class-name="com.test.listeners.TestSuiteListener"></listener>
+		<listener
+			class-name="com.test.listeners.AnnotationTransformer"></listener>
+	</listeners>
+
+	<test name="Selenium Practice">
+		<classes>
+			<class name="com.test.gui.PassFailTest" />
+			<class name="com.test.gui.SeleniumPractice" />
+		</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
