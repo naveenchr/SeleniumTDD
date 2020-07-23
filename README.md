@@ -12,6 +12,8 @@ A framework that incorporates key features of Selenium and TestNG which can be u
 * Automatic failure reruns
 * Integrated with sonarQube and java code coverage plugin for vulnerability analysis
 
+Note : Utility class is a work in progress
+
 # Table of contents
 * [Installation](#installation)
 * [Test Framework Design](#test-framework-design)
