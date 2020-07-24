@@ -111,9 +111,7 @@ public class PassFailTest {
 			BaseClass.getBaseObj().testFailureException(e);
 		}
 	}
-
 ```
-
 ## Page Object File
 
 ```Java
@@ -137,13 +135,10 @@ public class GoogleHomePage extends UtilityClass {
 		textField(searchTextBox, map.get("From Location"));
 	}
 }
-
 ```
 
 ## Excel File
 ![image](https://user-images.githubusercontent.com/11471191/85922565-079a8000-b8a2-11ea-89d9-31f2f3c365a6.png)
-
-
 
 # Generating sonar and jacoco reports
 
@@ -152,7 +147,6 @@ public class GoogleHomePage extends UtilityClass {
 <sonar.host.url>http://localhost:9000</sonar.host.url>
 ```
 * Execute the below maven command after the test run
-
 ```maven
 mvn sonar:sonar
 ```
