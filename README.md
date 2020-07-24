@@ -62,7 +62,7 @@ Run with groups tag
 mvn clean test -DtestngXML=testng.xml -Dgroups="Smoke Test" -P Profile_1
 ```
 
-Failed rerun
+Manual failed run addition to automatic rerun
 ```maven
 mvn test -P Profile_2
 ```
