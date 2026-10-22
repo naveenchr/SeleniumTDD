@@ -52,7 +52,7 @@ public class ExcelDataProviderMap extends BaseClass {
 
 				FileInputStream fileIn = new FileInputStream(SystemVariables.TEST_RESOURCES + "TestData.xlsx");
 
-				XSSFWorkbook workBook = new XSSFWorkbook(fileIn);) {
+				XSSFWorkbook workBook = new XSSFWorkbook(fileIn)) {
 
 			logger.info("Data Load From Excel Started");
 

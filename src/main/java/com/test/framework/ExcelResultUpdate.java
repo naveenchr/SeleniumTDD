@@ -39,7 +39,7 @@ public class ExcelResultUpdate extends BaseClass {
 
 				XSSFWorkbook workBook = new XSSFWorkbook(fileIn);
 
-				FileOutputStream fileOut = new FileOutputStream(SystemVariables.TEST_RESOURCES + "TestData.xlsx");
+				FileOutputStream fileOut = new FileOutputStream(SystemVariables.TEST_RESOURCES + "TestData.xlsx")
 
 		) {
 
@@ -111,7 +111,7 @@ public class ExcelResultUpdate extends BaseClass {
 
 			if (executionStatusMap.get(testCaseID) != null) {
 
-				tcStartTime = executionStatusMap.get(testCaseID).get(0);
+				tcStartTime = executionStatusMap.get(testCaseID).getFirst();
 				logger.debug("Test Start Time :{} ", tcStartTime);
 				cell = row.getCell(5);
 				cell.setCellValue(dateFormat.format((new Date(tcStartTime))));

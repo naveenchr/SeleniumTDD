@@ -41,8 +41,6 @@ public class GooglePlaceUpdateQA {
 				+ "  \"address\": \"29, side layout, cohen 09\",\r\n" + "  \"types\": [\r\n" + "    \"shoe park\",\r\n"
 				+ "    \"shop\"\r\n" + "  ],\r\n" + "  \"website\": \"http://rahulshettyacademy.com\",\r\n"
 				+ "  \"language\": \"French-IN\"\r\n" + "}\r\n" + "";
-		;
-
 		String response = given().log().all().queryParam("key", "qaclick123").header("Content-Type", "application/json")
 				.body(body).when().post("maps/api/place/add/json").then().extract().response().asString();
 		

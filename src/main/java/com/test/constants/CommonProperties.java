@@ -58,7 +58,7 @@ public class CommonProperties {
 
 		logger.debug("Data read from properties File");
 
-		try (FileInputStream file = new FileInputStream(SystemVariables.MAIN_RESOURCES + "configuration.properties");) {
+		try (FileInputStream file = new FileInputStream(SystemVariables.MAIN_RESOURCES + "configuration.properties")) {
 
 			properties = new Properties();
 			properties.load(file);
